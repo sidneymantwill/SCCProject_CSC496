@@ -29,7 +29,7 @@ app.listen(PORT, () =>{
 const db = mysql.createConnection({
     host : 'localhost',
     user : 'root',
-    password : 'Dragon!1073',
+    password : '',
     database : 'pa_area_codes'
 });
 db.connect((err) => {
