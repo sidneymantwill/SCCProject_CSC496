@@ -44,8 +44,8 @@ db.connect((err) => {
 
 
 app.get('/', function(req, res){
-	console.log("Req: "+req);
-	console.log("Res: "+res);
+	//console.log("Req: "+req);
+	//console.log("Res: "+res);
     res.sendFile(path.join(__dirname + '/index.html'));
 
     const readline = require('readline').createInterface({
