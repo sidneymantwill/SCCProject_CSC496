@@ -1,7 +1,0 @@
-.git
-.idea
-**/node_modules
-.DS_Store
-.data
-node_modules
-npm-debug.log

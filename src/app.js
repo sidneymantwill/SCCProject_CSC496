@@ -6,6 +6,7 @@ const path = require('path');
 
 const PORT = 8080;
 const app = express();
+//const router = 
 
 /*
 fs.readFile('./index.html', function (err, html) {
@@ -25,6 +26,7 @@ app.listen(PORT, () =>{
     console.log('Server Started');
 });
 
+/*
 // connect to database
 const db = mysql.createConnection({
     host : 'localhost',
@@ -38,13 +40,18 @@ db.connect((err) => {
     }
     console.log('MySql Connected');
 });
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
+*/
+
 
 app.get('/', function(req, res){
+	console.log("Req: "+req);
+	console.log("Res: "+res);
     res.sendFile(path.join(__dirname + '/index.html'));
+
+    const readline = require('readline').createInterface({
+        input: process.stdin,
+        output: process.stdout
+    })
 
     var search;
     var prompt;
