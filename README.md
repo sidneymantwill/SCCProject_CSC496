@@ -1,4 +1,8 @@
 # CSC496_SCCProject
 Team name: SCC Team members: Sidney Mantwill, Colleen Baksi, Claudia Gajes Project Choice: #3
 
-Project Plan: Documentation describing the selected computing service, including network diagram and specific details on what services being installed on which VM. We plan on using XenProject to create 2 Xen VM nodes. We plan to use geni-lib tool on CloubLab to instantiate a profile. After the profile instance starts, we will SSH into the VM to create the 2 Xen VM nodes and connect them with LAN by requesting a link.
+Project Plan: The goal of our project is to get a Node.js webserver to interact with a mySQL data base through docker containers and through cloudlab.
+
+As of right now, the mySQL database has not been correctly containerized. We have commented out the code that sets up the database so that the webserver can be tested on Cloudlab. 
+
+We hope to have everything fully automated by the third deliverable even if the mySQL database can not succesfully be containerized.
